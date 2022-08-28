@@ -1,4 +1,4 @@
-package restAssured;
+package restAssuredTraining;
 
 /*
     The 3 principles of API testing: given, when, there
@@ -8,10 +8,10 @@ package restAssured;
 */
 
 import io.restassured.RestAssured;
-import restAssured.helpers.Payload;
+import restAssuredTraining.helpers.Payload;
 
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 public class FirstRequest {
     public static void main(String[] args) {

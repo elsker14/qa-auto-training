@@ -1,4 +1,4 @@
-package restAssured.helpers;
+package restAssuredTraining.helpers;
 
 public class Payload {
     public static String addPlace() {

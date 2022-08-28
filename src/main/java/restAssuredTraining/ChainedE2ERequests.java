@@ -1,9 +1,9 @@
-package restAssured;
+package restAssuredTraining;
 
 import io.restassured.RestAssured;
 import org.testng.Assert;
-import restAssured.helpers.Payload;
-import restAssured.helpers.ReUsableMethods;
+import restAssuredTraining.helpers.Payload;
+import restAssuredTraining.helpers.ReUsableMethods;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;

@@ -1,4 +1,4 @@
-package restAssured.helpers;
+package restAssuredTraining.helpers;
 
 import io.restassured.path.json.JsonPath;
 
