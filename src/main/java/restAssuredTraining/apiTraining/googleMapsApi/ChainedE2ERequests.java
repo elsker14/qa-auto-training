@@ -1,4 +1,4 @@
-package restAssuredTraining.googleMapsApiReplica;
+package restAssuredTraining.apiTraining.googleMapsApi;
 
 import io.restassured.RestAssured;
 import org.testng.Assert;
