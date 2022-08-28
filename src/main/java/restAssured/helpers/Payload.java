@@ -1,4 +1,4 @@
-package restAssured.files;
+package restAssured.helpers;
 
 public class Payload {
     public static String addPlace() {

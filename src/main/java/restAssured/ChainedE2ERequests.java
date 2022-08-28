@@ -3,7 +3,8 @@ package restAssured;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import org.testng.Assert;
-import restAssured.files.Payload;
+import restAssured.helpers.Payload;
+import restAssured.helpers.ReUsableMethods;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
@@ -29,9 +30,7 @@ public class ChainedE2ERequests {
                         .extract()
                         .response()
                         .asString();
-
-        JsonPath jsonPathPostAddPlaceResponse = new JsonPath(postAddPlaceResponse);
-        String placeId = jsonPathPostAddPlaceResponse.get("place_id").toString();
+        String placeId = ReUsableMethods.rawToJson(postAddPlaceResponse).getString("place_id");
 
         // Update Place with New Address using the placeId variable
         String newAddress = "La tactu acasa";
@@ -60,9 +59,8 @@ public class ChainedE2ERequests {
                 .response()
                 .asString();
 
-        JsonPath jsonPathGetPlaceResponse = new JsonPath(getPlaceResponse);
-        String actualAdress = jsonPathGetPlaceResponse.getString("address");
-
-        Assert.assertEquals(actualAdress, newAddress, "Actual address " + actualAdress + " is different from introduced address " + newAddress);
+        String actualAdress = ReUsableMethods.rawToJson(getPlaceResponse).getString("address");
+        Assert.assertEquals(actualAdress, newAddress,
+                "Actual address " + actualAdress + " is different from introduced address " + newAddress);
     }
 }

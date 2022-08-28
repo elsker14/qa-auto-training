@@ -8,7 +8,7 @@ package restAssured;
 */
 
 import io.restassured.RestAssured;
-import restAssured.files.Payload;
+import restAssured.helpers.Payload;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
