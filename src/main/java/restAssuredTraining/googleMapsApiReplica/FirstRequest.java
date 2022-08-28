@@ -1,4 +1,4 @@
-package restAssuredTraining;
+package restAssuredTraining.googleMapsApiReplica;
 
 /*
     The 3 principles of API testing: given, when, there
