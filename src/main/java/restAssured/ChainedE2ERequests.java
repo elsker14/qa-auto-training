@@ -1,6 +1,8 @@
 package restAssured;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import org.testng.Assert;
 import restAssured.files.Payload;
 
 import static io.restassured.RestAssured.given;
@@ -8,21 +10,59 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class ChainedE2ERequests {
     public static void main(String[] args) {
-        // Validate if Add Place API is working as expected
+        /* Add place -> Update Place with New Address -> Get Place to validate if New Addressis present in response */
+
+        // Add Place POST Request
         RestAssured.baseURI = "https://rahulshettyacademy.com";
-        given() // EVERYTHING WE PUT IN HERE IS FROM REQUEST: header, body, etc
-                .log().all()
+        String postAddPlaceResponse =
+                given() // EVERYTHING WE PUT IN HERE IS FROM REQUEST: header, body, etc
+                        .queryParam("key", "qaclick123")
+                        .header("Content-Type", "application/json")
+                        .body(Payload.addPlace())
+                        .when()
+                        .post("maps/api/place/add/json")
+                        .then() // EVERYTHING WE PUT IN HERE IS FROM RESPONSE: header, body, etc
+                        .assertThat()
+                        .statusCode(200)
+                        .body("scope", equalTo("APP"))
+                        .header("server", "Apache/2.4.41 (Ubuntu)")
+                        .extract()
+                        .response()
+                        .asString();
+
+        JsonPath jsonPathPostAddPlaceResponse = new JsonPath(postAddPlaceResponse);
+        String placeId = jsonPathPostAddPlaceResponse.get("place_id").toString();
+
+        // Update Place with New Address using the placeId variable
+        String newAddress = "La tactu acasa";
+        given()
                 .queryParam("key", "qaclick123")
                 .header("Content-Type", "application/json")
-                .body(Payload.addPlace())
+                .body(Payload.updatePlace(placeId, newAddress))
                 .when()
-                .post("maps/api/place/add/json")
-                .then() // EVERYTHING WE PUT IN HERE IS FROM RESPONSE: header, body, etc
+                .put("maps/api/place/update/json")
+                .then()
                 .assertThat()
                 .statusCode(200)
-                .body("scope", equalTo("APP"))
-                .header("server", "Apache/2.4.41 (Ubuntu)");
+                .body("msg", equalTo("Address successfully updated"));
 
-        // Add place -> Update Place with New Address -> Get Place to validate if New Addressis present in response
+        // Get Place to validate if New Addressis present in response
+        String getPlaceResponse = given()
+                .queryParam("key", "qaclick123")
+                .queryParam("place_id", placeId)
+                .when()
+                .get("maps/api/place/get/json")
+                .then()
+                .assertThat()
+                .statusCode(200)
+                .body("address", equalTo(newAddress))
+                .extract()
+                .response()
+                .asString();
+
+        JsonPath jsonPathGetPlaceResponse = new JsonPath(getPlaceResponse);
+        String actualAdress = jsonPathGetPlaceResponse.getString("address");
+
+        Assert.assertEquals(actualAdress, newAddress, "Actual address " + actualAdress + " is different from introduced address " + newAddress);
     }
 }
