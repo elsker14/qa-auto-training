@@ -1,0 +1,3 @@
+https://qttechacademy.udemy.com/course/selenium-real-time-examplesinterview-questions/learn/lecture/14632176#overview
+
+https://www.guru99.com/implicit-explicit-waits-selenium.html
