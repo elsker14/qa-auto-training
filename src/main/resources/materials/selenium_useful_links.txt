@@ -1,0 +1,9 @@
+Courses:
+    https://qttechacademy.udemy.com/course/selenium-real-time-examplesinterview-questions/learn/lecture/14632176#overview
+
+Selenium Waits:
+    https://www.guru99.com/implicit-explicit-waits-selenium.html
+    https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/support/ui/FluentWait.html
+
+Practice sites:
+    https://the-internet.herokuapp.com/
