@@ -1,4 +1,4 @@
-package seleniumTraining.section11exercises;
+package seleniumTraining.section11and12exercises;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
