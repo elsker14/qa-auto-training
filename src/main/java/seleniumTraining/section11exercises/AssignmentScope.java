@@ -13,7 +13,7 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 
-public class Assignment {
+public class AssignmentScope {
 
     @Test
     public void assignment() throws InterruptedException {
