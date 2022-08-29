@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 @Test
-public class ActionsDemo {
+public class ActionsTest {
     public void actionsDemo() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "J:/Coding/Practice/UkrainaPower/chromedriver.exe");
         WebDriver driver = new ChromeDriver();

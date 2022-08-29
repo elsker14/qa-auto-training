@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 @Test
-public class WindowHandles {
+public class WindowHandlesTest {
     public void windowHandles() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "J:/Coding/Practice/UkrainaPower/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
