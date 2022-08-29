@@ -7,3 +7,6 @@ Selenium Waits:
 
 Practice sites:
     https://the-internet.herokuapp.com/
+
+ChromeDriver:
+    https://chromedriver.chromium.org/capabilities
