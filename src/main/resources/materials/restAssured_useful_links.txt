@@ -5,6 +5,15 @@ Json Beautifier:
     https://jsoneditoronline.org/
 
 Jira API:
-    My Jira Server ID: BP02-JSI2-FGL2-1OHN
+
     https://docs.atlassian.com/software/jira/docs/api/REST/9.1.0/
     https://developer.atlassian.com/server/jira/platform/cookie-based-authentication/
+
+Jira Jiji credentials:
+    Setup:
+        https://www.atlassian.com/software/jira/update
+        Download -> Install -> Next Next -> startjira.bat from installation folder
+    username: iancujianu98
+    pass 1233
+    My Jira Server ID: BP02-JSI2-FGL2-1OHN
+    Attachments: Default Directory [C:\Users\ProjectCATZ\Atlassian\Application Data\Jira\data\attachments]
