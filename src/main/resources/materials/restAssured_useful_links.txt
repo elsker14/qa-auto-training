@@ -3,3 +3,8 @@ Courses:
 
 Json Beautifier:
     https://jsoneditoronline.org/
+
+Jira API:
+    My Jira Server ID: BP02-JSI2-FGL2-1OHN
+    https://docs.atlassian.com/software/jira/docs/api/REST/9.1.0/
+    https://developer.atlassian.com/server/jira/platform/cookie-based-authentication/
