@@ -3,14 +3,25 @@ Theory
 
     - CI/CD
         https://www.parasoft.com/blog/implementing-qa-in-a-ci-cd-pipeline/
+        https://marutitech.com/qa-in-cicd-pipeline/
 
     - work with and test APIs
+        RestAssured
+        Postman
 
     - test business requirements
+        Jira
+        Testrail
+        https://www.dummies.com/article/business-careers-money/business/general-business/how-to-create-test-cases-for-business-analysis-validation-162527/
 
     - iteratively bug-free solution
+        Jira
+        https://brainhub.eu/library/strategies-for-managing-bugs
 
     - discussed how to achieve thread safety.
+
+Appium:
+    https://www.guru99.com/introduction-to-appium.html
 
 Linux basics:
     https://www.hostinger.com/tutorials/linux-commands
