@@ -1,0 +1,21 @@
+Practice site:
+	https://blazedemo.com/
+	https://the-internet.herokuapp.com/login
+
+JMeter:
+	https://jmeter.apache.org/download_jmeter.cgi
+
+BlazeMeter Chrome Plugin:
+	https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en
+
+JMeter Plugins:
+	https://jmeter-plugins.org/
+	https://jmeter-plugins.org/wiki/PluginsManager/
+
+JMeter Assertions:
+	https://www.blazemeter.com/blog/jmeter-assertions#size
+
+Other materials:
+https://www.seleniumeasy.com/jenkins-tutorials/install-jenkins-via-command-line
+https://www.seleniumeasy.com/testng-tutorials/how-to-run-testng-xml-webdriver-tests-from-command-line
+https://stackoverflow.com/questions/67076446/mvn-command-not-found-for-git-bash-but-java-and-maven-path-are-ok-using-cmd

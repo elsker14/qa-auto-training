@@ -25,3 +25,6 @@ OAuth2 Query params:
     response_type=code
     redirect_uri=https://rahulshettyacademy.com/getCourse.php
     code=
+
+Page Object Model (POM) and Page Factory concepts:
+    https://www.guru99.com/page-object-model-pom-page-factory-in-selenium-ultimate-guide.html

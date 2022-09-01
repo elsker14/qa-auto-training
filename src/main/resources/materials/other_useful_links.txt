@@ -1,0 +1,30 @@
+Theory
+    - the role of QA from the creation of business requirements to release to production.
+
+    - CI/CD
+        https://www.parasoft.com/blog/implementing-qa-in-a-ci-cd-pipeline/
+
+    - work with and test APIs
+
+    - test business requirements
+
+    - iteratively bug-free solution
+
+    - discussed how to achieve thread safety.
+
+Linux basics:
+    https://www.hostinger.com/tutorials/linux-commands
+
+POM and PF concepts
+    https://www.guru99.com/page-object-model-pom-page-factory-in-selenium-ultimate-guide.html
+
+Cross-Browser testing:
+    https://www.guru99.com/cross-browser-testing-using-selenium.html
+
+Get Better Idea
+    LeetCode 2 problems/day
+        easy 25
+        mid 35
+        hard 45
+    10 problems/week -> review on wk
+    Youtube solution - neetcode.io
