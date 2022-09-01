@@ -10,3 +10,10 @@ Practice sites:
 
 ChromeDriver:
     https://chromedriver.chromium.org/capabilities
+
+Jenkins pipeline:
+    https://www.jenkins.io/doc/book/pipeline/getting-started/
+
+Selenium:
+    https://chercher.tech/java/normalize-space-xpath
+    https://www.browserstack.com/guide/selenium-grid-tutorial#:~:text=Grid%20in%20detail.-,What%20is%20Selenium%20Grid%3F,to%20multiple%20registered%20Grid%20nodes.
